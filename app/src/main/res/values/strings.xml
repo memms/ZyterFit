@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">ZyterFitLayout</string>
+    <string name="DashBoard_Button">Dashboard</string>
+    <string name="Heart_Button">Heart Home</string>
+    <string name="Journal_Button">Journal</string>
+    <string name="Settings_Button">Settings</string>
+    <string name="Welcome_login">Welcome, \nPlease login</string>
+    <string name="ok">ok</string>
+    <string name="permission_rationale">permision_rationale</string>
+    <string name="zyterfit">ZyterFit</string>
+    <string name="profile">Profile</string>
+    <string name="_5_7">5\'7\"</string>
+    <string name="Gpermissionsinfo">ZyterFit uses Google Fitness api to track, record, calculate, and analyze data.</string>
+    <string name="Gpermissionsinfo1">To track walking, running, and cycling automatically, allow Google to recognize your physical activity.</string>
+    <string name="Gpermissionsinfo2">Google will calculate metrics like steps, distance, and calories for these activies in the background.</string>
+    <string name="Gpermissionsinfo3"> This step is required before you can continue onto using ZyterFit. </string>
+    <string name="Gpermissionsinfo4">For more info on how Google uses this data, visit: www.google.com/fit/</string>
+
+    <string name="pairing_with">Pairing with:\n%1s\n%2s...</string>
+    <string name="start_scanning">Start Scanning</string>
+    <string name="stop_scanning">Stop Scanning</string>
+
+    <string name="discovery_note">A list of available Bluetooth devices will appear above. If you are using Android 6+ (Marshmellow or above), please allow location permissions to search.</string>
+    <string name="note">Note:</string>
+    <string name="pairing_note">If your Mi Band lights up and vibrates, tap the button, or as instructed by the watch</string>
+    <string name="device_image">Device icon</string>
+    <string name="item_name">Name</string>
+    <string name="item_description">Description</string>
+
+    <string-array name="Gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="height_unit">
+        <item>Feet &amp; Inches</item>
+        <item>Centimeters</item>
+    </string-array>
+    <string-array name="weight_unit">
+        <item>Pounds</item>
+        <item>Kilograms</item>
+        <item>Stones</item>
+    </string-array>
+    <string-array name="distance_unit">
+        <item>Kilometers</item>
+        <item>Miles</item>
+    </string-array>
+    <string-array name="energy_unit">
+        <item>Calories</item>
+        <item>Kilojoules</item>
+    </string-array>
+    <string-array name="theme_unit">
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+    <string-array name="week_unit">
+        <item>Saturday</item>
+        <item>Sunday</item>
+        <item>Monday</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="GSignInWelcome">Welcome, to use this app you must login to your google account</string>
+    <string name="Gpermissionstitle">Automaticly Track your activities</string>
+    <string name="ApermissionsTitle">Use device sensors and location</string>
+    <string name="Apermissionsinfo">ZyterFit and Google require device permission to recognize activity.</string>
+    <string name="Apermissionsinfo1">This allows ZyterFit to automaticly detect activities/movements such as steps.</string>
+    <string name="Apermissionsinfo2">ZyterFit also requires access to device\'s onboard sensors to be able to track heart data etc.</string>
+    <string name="AboutYouInfo">This information lets the app to estimate calories, distance, and the intensity of your activity. You can change these values later, inside the app.</string>
+    <string name="title_activity_data_set_details">DataSetDetailsActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_alignParentLeft="true"
+        android:id="@+id/specific_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N/A"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+
+    <Button
+        android:id="@+id/device_stop_tracking"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="10dp"
+        android:layout_height="wrap_content"
+        android:text="Stop Tracking"
+        android:textSize="15dp"
+        android:background="@drawable/rounded_button"/>
+    
+    <Button
+        android:id="@+id/device_unpair"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="50dp"
+        android:layout_height="wrap_content"
+        android:text="Unpair"
+        android:textColor="@color/red"
+        android:layout_marginBottom="5dp"
+        android:textSize="15dp"
+        android:background="@drawable/rounded_button"/>
+
+
+
+
+</LinearLayout>

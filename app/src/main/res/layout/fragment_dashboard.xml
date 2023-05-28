@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/dash_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <!-- Profile Image -->
+            <!-- Needs profile implementation -->
+            <LinearLayout
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp">
+                <ImageView
+                    android:id="@+id/DprofilePic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_pic"/>
+            </LinearLayout>
+
+            <!-- Welcome @user -->
+            <!-- Needs @user implementation -->
+            <TextView
+                android:id="@+id/DprofileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome @User"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Date/Time Text -->
+            <!-- Format Month Date, Year hh:mm a at the launch of the fragment -->
+            <TextView
+                android:id="@+id/datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:rowCount="3"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:layout_gravity="center"
+            android:columnOrderPreserved="false">
+
+            <!-- Heart Rate Tab -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/heart_rate_card"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                android:background="@color/white"
+                android:layout_margin="10dp">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="left">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heart Rate"
+                        android:textSize="11dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginLeft="17dp"/>
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:src="@drawable/ic_heart_blue"
+                        android:layout_marginTop="43.5dp"
+                        android:layout_marginLeft="19dp"/>
+
+                    <!-- Needs HeartBeat Implementation-->
+                    <TextView
+                        android:id="@+id/heart_rate_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+                        android:text="--"
+                        android:textStyle="bold"
+                        android:layout_marginTop="37dp"
+                        android:layout_marginLeft="51dp"/>
+                    <TextView
+                        android:layout_toRightOf="@id/heart_rate_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:text="BPM"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="41dp"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Needs Updated implementation -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Updated: "
+                        android:textSize="10dp"
+                        android:layout_gravity="top"
+                        android:textColor="@color/grey"
+                        android:layout_marginTop="98dp"
+                        android:layout_marginLeft="17dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Resting Rate Tab -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rest_rate_card"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                android:background="@color/white"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="left">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Resting Rate"
+                        android:textSize="11dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginLeft="17dp"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:src="@drawable/ic_loading_blue"
+                        android:layout_marginTop="43.5dp"
+                        android:layout_marginLeft="19dp"/>
+
+                    <!-- Needs Rest Rate Implementation-->
+                    <TextView
+                        android:id="@+id/rest_rate_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+                        android:text="--"
+                        android:textStyle="bold"
+                        android:layout_marginTop="37dp"
+                        android:layout_marginLeft="51dp"/>
+                    <TextView
+                        android:layout_toRightOf="@id/rest_rate_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:text="BPM"
+                        android:layout_marginTop="41dp"
+                        android:layout_marginLeft="5dp"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Updated: "
+                        android:textSize="10dp"
+                        android:layout_gravity="top"
+                        android:textColor="@color/grey"
+                        android:layout_marginTop="98dp"
+                        android:layout_marginLeft="17dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--Steps Tab -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/step_count_card"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                android:background="@color/white"
+                android:layout_margin="10dp">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                        android:id="@+id/stepscount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="25dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Steps"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_marginTop="55dp"
+                            android:layout_marginLeft="17dp"/>
+                    </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/steps_updated"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Updated: "
+                        android:textSize="10dp"
+                        android:layout_gravity="top"
+                        android:textColor="@color/grey"
+                        android:layout_marginTop="98dp"
+                        android:layout_marginLeft="17dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Calories/kCal Tab -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/calories_count_card"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                android:background="@color/white"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="left">
+
+                    <TextView
+                        android:id="@+id/energy_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="25dp"/>
+
+                    <TextView
+                        android:id="@+id/energy_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="kCals"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginTop="55dp"
+                        android:layout_marginLeft="17dp"/>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Updated: "
+                        android:textSize="10dp"
+                        android:layout_gravity="top"
+                        android:textColor="@color/grey"
+                        android:layout_marginTop="98dp"
+                        android:layout_marginLeft="17dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Miles Tab -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/distance_count_card"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                android:background="@color/white"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="left">
+
+                    <TextView
+                        android:id="@+id/mile_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="25dp"/>
+
+                    <TextView
+                        android:id="@+id/distance_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mi"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginTop="55dp"
+                        android:layout_marginLeft="17dp"/>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Updated: "
+                        android:textSize="10dp"
+                        android:layout_gravity="top"
+                        android:textColor="@color/grey"
+                        android:layout_marginTop="98dp"
+                        android:layout_marginLeft="17dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Minutes of total activity Tab -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/move_mins_card"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                android:background="@color/white"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="left">
+
+                    <TextView
+                        android:id="@+id/move_minutes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="25dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Move min"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginTop="55dp"
+                        android:layout_marginLeft="17dp"/>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Updated: "
+                        android:textSize="10dp"
+                        android:layout_gravity="top"
+                        android:textColor="@color/grey"
+                        android:layout_marginTop="98dp"
+                        android:layout_marginLeft="17dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/weight_card"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                android:background="@color/white"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="left">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Weight"
+                        android:textSize="11dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginLeft="17dp"/>
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Needs HeartBeat Implementation-->
+                    <TextView
+                        android:id="@+id/weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+                        android:text="N/A"
+                        android:textStyle="bold"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="17dp"/>
+                    <TextView
+                        android:id="@+id/weight_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:text="kilograms"
+                        android:textStyle="bold"
+                        android:layout_marginTop="75dp"
+                        android:layout_marginLeft="17dp"/>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/height_card"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                android:background="@color/white"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="left">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Height"
+                        android:textSize="11dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginLeft="17dp"/>
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Needs HeartBeat Implementation-->
+                    <TextView
+                        android:id="@+id/height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+                        android:text="N/A"
+                        android:textStyle="bold"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="17dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:id="@+id/height_unit"
+                        android:textColor="@color/black"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:layout_marginTop="75dp"
+                        android:layout_marginLeft="17dp"/>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

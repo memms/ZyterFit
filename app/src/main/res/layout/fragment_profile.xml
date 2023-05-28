@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="50dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity Goals"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/grey_dark"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:rowCount="1"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:layout_gravity="center"
+        android:columnOrderPreserved="false"
+        android:layout_margin="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="center|right">
+
+            <Button
+                android:id="@+id/stepminus"
+                android:layout_width="11dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_minus"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="50dp"
+                android:padding="5dp"
+                android:clickable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/stepgoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4000"
+                android:textSize="24dp"
+                android:layout_marginLeft="15dp"
+                android:inputType="number"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="@+id/stepminus"
+                app:layout_constraintBottom_toBottomOf="@id/stepminus"
+                app:layout_constraintStart_toEndOf="@+id/stepminus"
+                />
+            <Button
+                android:id="@+id/stepplus"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/ic_plus_2"
+                android:padding="5dp"
+                android:clickable="true"
+                app:layout_constraintStart_toEndOf="@+id/stepgoal"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="center|right">
+
+            <Button
+                android:id="@+id/imgMinus2"
+                android:layout_width="11dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_minus"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:padding="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/heartGoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4000"
+                android:textSize="24dp"
+                android:layout_marginLeft="15dp"
+                android:inputType="number"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="@+id/imgMinus2"
+                app:layout_constraintBottom_toBottomOf="@id/imgMinus2"
+                app:layout_constraintStart_toEndOf="@+id/imgMinus2"
+                />
+            <Button
+                android:id="@+id/imgPlus2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/ic_plus_2"
+                android:padding="5dp"
+                app:layout_constraintStart_toEndOf="@+id/heartGoal"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="Steps"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/heart_points"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:gravity="center"
+            android:text="Heart Points"
+            android:textColor="@color/black" />
+
+    </GridLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About you"
+        android:textSize="20dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/grey_dark"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:alignmentMode="alignMargins"
+        android:background="@color/white"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:rowCount="2">
+        <!--  ==================================================================    -->
+
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="17dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="top"
+            android:layout_margin="16dp"
+            android:background="@color/white"
+            android:text="Gender"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_button"
+            android:elevation="0dp"
+            android:text="Male"
+            android:textAllCaps="false" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="right"
+            android:layout_marginTop="27dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_down_arrow" />
+        <!--  ==================================================================    -->
+
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="17dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="top"
+            android:layout_margin="16dp"
+            android:background="@color/white"
+            android:text="Birthday"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_button"
+            android:elevation="0dp"
+            android:text="12/22/2001"
+            android:textAllCaps="false" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="right"
+            android:layout_marginTop="27dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_down_arrow" />
+        <!--  ==================================================================    -->
+
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="17dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="top"
+            android:layout_margin="16dp"
+            android:background="@color/white"
+            android:text="Weight"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/weight_button"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_button"
+            android:elevation="0dp"
+            android:text="0 lbs"
+            android:textAllCaps="false" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="right"
+            android:layout_marginTop="27dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_down_arrow" />
+        <!--  ==================================================================    -->
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="17dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="top"
+            android:layout_margin="16dp"
+            android:background="@color/white"
+            android:text="Height"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/height_button"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_button"
+            android:elevation="0dp"
+            android:text="@string/_5_7"
+            android:textAllCaps="false" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="right"
+            android:layout_marginTop="27dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_down_arrow" />
+        <!--   ==================================================================    -->
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My devices"
+        android:textSize="20dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/grey_dark"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"/>
+
+    <RelativeLayout
+        android:id="@+id/manage_devices_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/top_clickable_white"
+        android:layout_marginHorizontal="25dp"
+        android:elevation="5dp"
+        android:clickable="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage devices"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="11dp"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_break_bottom"
+        android:layout_marginHorizontal="25dp"/>
+
+    <RelativeLayout
+        android:id="@+id/add_devices_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginHorizontal="25dp"
+        android:elevation="5dp"
+        android:background="@drawable/bottom_clickable_white"
+        android:clickable="true">
+
+
+        <Button
+            android:id="@+id/add_device_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_plus"
+            android:layout_marginVertical="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/add_device_button"
+            android:text="Add device"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="11dp"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

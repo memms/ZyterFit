@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.zyterfitlayout">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_icon"
+        android:label="@string/zyterfit"
+        android:roundIcon="@drawable/ic_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity android:name="AddDevices.QnScale.QnScaleData"></activity>
+        <activity android:name="AddDevices.QnScale.QnScanActivity" />
+        <activity android:name="AddDevices.QnScale.QnScaleMain" />
+        <activity android:name=".datasetdetails.DataSetDetailsActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name="MiBandbluetooth.BluetoothScanMainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="MiBandbluetooth.Activities.DeviceControlActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.some.new" />
+        <activity
+            android:name="MiBandbluetooth.Activities.PairingActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="MiBandbluetooth.Activities.DiscoveryActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="MiBandbluetooth.Device.DeviceService" />
+        <service android:name="MiBandbluetooth.Device.MiBandService"/>
+
+        <activity android:name="buffer_activity.BufferActivity" />
+        <activity android:name=".ActivityTrackActivity" />
+        <activity
+            android:name=".DetailsActivity"
+            android:hardwareAccelerated="true"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:hardwareAccelerated="true" />
+
+        <service android:name=".TrackingService" />
+    </application>
+
+</manifest>

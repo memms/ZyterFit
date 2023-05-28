@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingHorizontal="25dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Name"
+        android:textSize="15dp"
+        android:textColor="@color/grey_dark"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/datapoint"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="details"/>
+
+
+</RelativeLayout>

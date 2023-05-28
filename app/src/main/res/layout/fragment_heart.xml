@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+
+    <LinearLayout
+        android:id="@+id/dash_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average Heart Rate"
+                android:textSize="11sp"
+                android:textColor="@color/grey_sub"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_heart_filled"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:id="@id/heart_rate_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="40dp"
+                    android:textColor="@color/black"
+                    android:text="--"
+                    android:textStyle="bold"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="80dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:text="BPM"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/heart_rate_num"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginLeft="10dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white"
+                android:rowCount="1"
+                android:columnCount="3"
+                android:alignmentMode="alignMargins"
+                android:layout_gravity="center"
+                android:columnOrderPreserved="false"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="130dp"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="left">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Minimum"
+                        android:textSize="11dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginLeft="17dp"/>
+
+                    <!-- Needs HeartBeat Implementation-->
+                        <TextView
+                            android:id="@+id/minimum_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="25dp"
+                            android:textColor="@color/black"
+                            android:text="--"
+                            android:textStyle="bold"
+                            android:layout_marginTop="37dp"
+                            android:layout_marginLeft="17dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="@color/colorPrimary"
+                            android:text="BPM"
+                            android:layout_toRightOf="@id/minimum_rate"
+                            android:layout_marginTop="41dp"
+                            android:layout_marginLeft="5dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="130dp"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="left">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Maximum"
+                        android:textSize="11dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginLeft="17dp"/>
+
+                    <!-- Needs HeartBeat Implementation-->
+                    <TextView
+                        android:id="@+id/maximum_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+                        android:text="--"
+                        android:textStyle="bold"
+                        android:layout_marginTop="37dp"
+                        android:layout_marginLeft="17dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/maximum_rate"
+                        android:textSize="16dp"
+                        android:textColor="@color/peach"
+                        android:text="BPM"
+                        android:layout_marginTop="41dp"
+                        android:layout_marginLeft="5dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="left">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Average"
+                        android:textSize="11dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginLeft="17dp"/>
+
+                    <!-- Needs HeartBeat Implementation-->
+                    <TextView
+                        android:id="@+id/average_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+                        android:text="--"
+                        android:textStyle="bold"
+                        android:layout_marginTop="37dp"
+                        android:layout_marginLeft="17dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/neongreen"
+                        android:text="BPM"
+                        android:layout_toRightOf="@id/average_rate"
+                        android:layout_marginTop="41dp"
+                        android:layout_marginLeft="5dp"/>
+                </RelativeLayout>
+
+            </GridLayout>
+
+
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="1"
+            android:columnCount="1"
+            android:alignmentMode="alignMargins"
+            android:layout_gravity="center"
+            android:columnOrderPreserved="false">
+
+            <!-- Heart Rate Tab -->
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="7dp"
+                android:background="@color/white"
+                android:layout_margin="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="left">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sinus Rythm"
+                        android:textSize="21dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginLeft="17dp"/>
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <!-- Needs HeartBeat Implementation-->
+                    <TextView
+                        android:id="@+id/sinus_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+                        android:text="55"
+                        android:textStyle="bold"
+                        android:layout_marginTop="57dp"
+                        android:layout_marginLeft="17dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/grey_dark"
+                        android:text="BPM Average"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginLeft="53dp"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Needs Updated implementation -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Updated: "
+                        android:textSize="10dp"
+                        android:layout_gravity="top"
+                        android:textColor="@color/grey_dark"
+                        android:layout_marginTop="138dp"
+                        android:layout_marginLeft="17dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="7dp"
+                android:background="@color/white"
+                android:layout_margin="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="left">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sinus Rythm"
+                        android:textSize="21dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginLeft="17dp"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <!-- Needs Sinus Rythm Implementation-->
+                    <TextView
+                        android:id="@id/sinus_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+                        android:text="55"
+                        android:textStyle="bold"
+                        android:layout_marginTop="57dp"
+                        android:layout_marginLeft="17dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/grey_dark"
+                        android:text="BPM Average"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginLeft="53dp"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Updated: "
+                        android:textSize="10dp"
+                        android:layout_gravity="top"
+                        android:textColor="@color/grey_dark"
+                        android:layout_marginTop="138dp"
+                        android:layout_marginLeft="17dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

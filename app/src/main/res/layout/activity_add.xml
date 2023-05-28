@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/activity_close"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/ic_close"
+                android:layout_marginLeft="25dp"
+                />
+            <Button
+                android:id="@+id/activity_save"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="40dp"
+                android:layout_height="17dp"
+                android:layout_alignParentRight="true"
+                android:text="Save"
+                android:textSize="15dp"
+                android:elevation="0dp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:gravity="top"
+                android:padding="0dp"
+                android:layout_marginRight="25dp"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Activity"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:layout_marginVertical="20dp"
+            android:layout_marginLeft="25dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity Title"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="10dp"/>
+            
+        <EditText
+            android:id="@+id/activity_title"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Activity Title"
+            android:textColorHint="@color/grey_sub"
+            android:textColor="@color/black"
+            android:paddingHorizontal="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="25dp"
+            android:elevation="0dp"
+            android:background="@drawable/custom_button"
+            android:textAllCaps="false"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity Type"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/activity_type"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Activty Type"
+                android:textColorHint="@color/grey_sub"
+                android:textColor="@color/black"
+                android:paddingHorizontal="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="25dp"
+                android:elevation="0dp"
+                android:background="@drawable/custom_button"
+                android:textAllCaps="false"
+                android:gravity="start|center_vertical" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_down_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/useless_title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="35dp"
+                />
+            <TextView
+                android:id="@+id/activity_date"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/useless_title3"
+                android:hint="Date"
+                android:textColor="@color/black"
+                android:paddingHorizontal="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="25dp"
+                android:elevation="0dp"
+                android:background="@drawable/custom_button"
+                android:gravity="start|center_vertical" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_down_arrow" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:id="@+id/useless_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Time"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="35dp"
+                />
+            <TextView
+                android:id="@+id/activity_start_time"
+                android:layout_width="178dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="25dp"
+                android:hint="Start"
+                android:paddingHorizontal="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/useless_title"
+                android:textColor="@color/black"
+                android:elevation="0dp"
+                android:background="@drawable/custom_button"
+                android:gravity="start|center_vertical" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_down_arrow" />
+            <TextView
+                android:id="@+id/uesless_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Time"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="125dp"
+                android:layout_alignParentTop="true" />
+            <TextView
+                android:id="@+id/activity_end_time"
+                android:layout_width="178dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:layout_marginEnd="25dp"
+                android:hint="End"
+                android:layout_toRightOf="@id/activity_start_time"
+                android:layout_below="@id/uesless_title2"
+                android:textColor="@color/black"
+                android:paddingHorizontal="20dp"
+                android:elevation="0dp"
+                android:background="@drawable/custom_button"
+                android:gravity="start|center_vertical"
+                android:layout_marginRight="25dp" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@id/activity_end_time"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_down_arrow" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/effort"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Effort"
+            android:textColor="@color/grey_dark"
+            android:background="@drawable/line_break_bottom"
+            android:textStyle="bold"
+            android:paddingHorizontal="25dp"
+            android:gravity="center_vertical"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/effort">
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="50dp"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notes"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/activity_notes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Notes"
+            android:textColorHint="@color/grey_sub"
+            android:textColor="@color/black"
+            android:paddingHorizontal="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="25dp"
+            android:elevation="0dp"
+            android:background="@drawable/custom_button"
+            android:textAllCaps="false"/>
+        <LinearLayout
+            android:id="@+id/details_container"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/activity_date"
+            android:weightSum="2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="25dp"
+            >
+
+            <EditText
+                android:id="@+id/activity_calories"
+                android:layout_width="178dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:hint="Calories"
+                android:inputType="number"
+                android:textColorHint="@color/grey_sub"
+                android:paddingHorizontal="20dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/black"
+                android:elevation="0dp"
+                android:background="@drawable/custom_button"
+                android:gravity="start|center_vertical" />
+            <EditText
+                android:id="@+id/activity_steps"
+                android:layout_width="178dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:hint="Steps"
+                android:inputType="number"
+                android:textColorHint="@color/grey_sub"
+                android:textColor="@color/black"
+                android:paddingHorizontal="20dp"
+                android:elevation="0dp"
+                android:background="@drawable/custom_button"
+                android:gravity="start|center_vertical" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/activity_miles"
+            android:layout_width="178dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="25dp"
+            android:hint="Miles"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/grey_sub"
+            android:textColor="@color/black"
+            android:paddingHorizontal="20dp"
+            android:elevation="0dp"
+            android:background="@drawable/custom_button"
+            android:gravity="start|center_vertical" />
+    </LinearLayout>
+
+
+
+
+</ScrollView>

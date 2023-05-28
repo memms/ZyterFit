@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity"
+    android:paddingTop="15dp">
+    <Button
+        android:id="@+id/test_button"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="END TRACKING TEST"/>
+    <Button
+        android:id="@+id/Dclose"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_close"
+        android:layout_marginLeft="25dp"
+        />
+    <Button
+        android:id="@+id/Ddelete"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="50dp"
+        android:layout_height="17dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="Delete"
+        android:textSize="15dp"
+        android:elevation="0dp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:gravity="top"
+        android:padding="0dp"
+        android:layout_marginRight="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Ddelete"
+        android:paddingTop="10dp"
+        android:layout_marginHorizontal="25dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/DactivityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/details_icon"
+                android:layout_width="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="16dp"
+                />
+            <TextView
+                android:id="@+id/Ddate_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="datetime"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="20dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_heart_num"
+            android:layout_marginHorizontal="5dp"/>
+        <TextView
+            android:id="@+id/Dheart_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HeartNum"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_steps"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:id="@+id/Dstep_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/Dhidden_encouragement_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_motivation_icon"/>
+            <TextView
+                android:id="@+id/Dencouragement_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="left"
+            android:src="@drawable/ic_active_time"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Active Time"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/Dactive_time_val"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="end"
+            android:text="0"/>
+    </LinearLayout>
+
+<!--        Line Break-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/line_break_bottom"/>
+
+<!--        Distance-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_distance_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Distance"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/Ddistance_val"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="end"
+                android:text="0 miles"/>
+        </LinearLayout>
+
+<!--        Calories    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_calories_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Calories"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/Dcalories_val"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="end"
+                android:text="0"/>
+        </LinearLayout>
+
+<!--        Move Minutes-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_move_min_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Move Minutes"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/Dmove_mins_val"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="end"
+                android:text="0"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Dhidden_lay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/Dhidden_image1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="left"
+                />
+            <TextView
+                android:id="@+id/Dhidden_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/Dhidden_val1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_weight="1"
+                android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Dhidden_lay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/Dhidden_image2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="left"
+                />
+            <TextView
+                android:id="@+id/Dhidden_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/Dhidden_val2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_weight="1"
+                android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_notes_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Notes:"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/Dnotes_text_val"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_weight="1"
+                android:text="N/A"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+
+

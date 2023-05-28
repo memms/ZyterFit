@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="MiBandbluetooth.Activities.DeviceControlActivity">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_calendar_heart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Automaticly Track your Heart Rate"
+        android:layout_below="@id/icon"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="ZyterFit has successfully established a connection with the device and can automaticly track data."/>
+    <TextView
+        android:id="@+id/info1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="How often would you like the app to track data from your device?"/>
+
+    <TextView
+        android:id="@+id/info2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="Notice: The shorter the time interval, the more battery might be consumed."/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="10dp"
+        android:layout_below="@id/info1"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="left">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continuous"
+            android:textColor="@color/grey_dark"
+            android:layout_marginVertical="5dp"
+            android:onClick="checkButton"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:textColor="@color/grey_dark"
+            android:text="5 minutes"
+            android:onClick="checkButton"
+            />
+        
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:textColor="@color/grey_dark"
+            android:text="10 minutes"
+            android:onClick="checkButton"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:textColor="@color/grey_dark"
+            android:text="15 minutes"
+            android:onClick="checkButton"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:textColor="@color/grey_dark"
+            android:text="30 minutes"
+            android:onClick="checkButton"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:textColor="@color/grey_dark"
+            android:text="Manual"
+            android:onClick="checkButton"
+            />
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+<!--        <Button-->
+<!--            android:text="End"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/custom_button"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:id="@+id/offBtn"/>-->
+
+        <Button
+            android:text="Cancel"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="70dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue_standard"
+            android:textColor="@android:color/white"
+            android:paddingHorizontal="20dp"
+            android:id="@+id/Bcancel"/>
+
+        <Button
+            android:text="Turn on"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue_standard"
+            android:textColor="@android:color/white"
+            android:paddingHorizontal="20dp"
+            android:id="@+id/onBtn"/>
+    </LinearLayout>
+
+<!--    <com.github.mikephil.charting.charts.LineChart-->
+<!--        android:id="@+id/chart"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+</RelativeLayout>

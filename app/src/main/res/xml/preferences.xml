@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="Units">
+        <ListPreference
+            android:title="Height"
+            android:summary="%s"
+            android:key="height_unit"
+            android:entries="@array/height_unit"
+            android:entryValues="@array/height_unit"
+            android:defaultValue="Feet &amp; Inches" />
+        <ListPreference
+            android:title="Weight"
+            android:summary="%s"
+            android:key="weight_unit"
+            android:entries="@array/weight_unit"
+            android:entryValues="@array/weight_unit"
+            android:defaultValue="Kilograms" />
+        <ListPreference
+            android:title="Distance"
+            android:summary="%s"
+            android:key="distance_unit"
+            android:entries="@array/distance_unit"
+            android:entryValues="@array/distance_unit"
+            android:defaultValue="Miles" />
+        <ListPreference
+            android:title="Energy"
+            android:summary="%s"
+            android:key="energy_unit"
+            android:entries="@array/energy_unit"
+            android:entryValues="@array/energy_unit"
+            android:defaultValue="Calories" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Tracking Preferences">
+
+        <SwitchPreferenceCompat
+            android:title="Track your activities"
+            android:summary="Use phone sensors to automaticly track metrics like steps and distance"
+            android:key="activities_track"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Notifications">
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Display">
+        <ListPreference
+            android:title="Theme"
+            android:summary="%s"
+            android:key="theme"
+            android:entries="@array/theme_unit"
+            android:entryValues="@array/theme_unit"
+            android:defaultValue="Light" />
+        <ListPreference
+            android:title="Start of the week"
+            android:summary="%s"
+            android:key="week_start"
+            android:entries="@array/week_unit"
+            android:entryValues="@array/week_unit"
+            android:defaultValue="Monday" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

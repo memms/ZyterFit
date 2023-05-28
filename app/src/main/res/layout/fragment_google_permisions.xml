@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="buffer_activity.GooglePermisionsFragment">
+
+
+    <ImageView
+        android:id="@+id/Gicon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_calendar_heart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/Gwelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Gpermissionstitle"
+        android:layout_below="@id/Gicon"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/Gpermissionsinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Gwelcome"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="@string/Gpermissionsinfo"/>
+    <TextView
+        android:id="@+id/Gpermissionsinfo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Gpermissionsinfo"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="@string/Gpermissionsinfo1"/>
+    <TextView
+        android:id="@+id/Gpermissionsinfo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Gpermissionsinfo1"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="@string/Gpermissionsinfo2"/>
+    <TextView
+
+        android:id="@+id/Gpermissionsinfo4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Gpermissionsinfo3"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="@string/Gpermissionsinfo4"/>
+    <TextView
+        android:id="@+id/Gpermissionsinfo3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Gpermissionsinfo2"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="@string/Gpermissionsinfo3"/>
+    <Button
+        android:id="@+id/Gpermissionsbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn on"
+        android:background="@drawable/button_blue_standard"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:paddingHorizontal="20dp"
+        android:layout_margin="30dp"/>
+
+</RelativeLayout>

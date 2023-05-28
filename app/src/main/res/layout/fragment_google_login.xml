@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="buffer_activity.GoogleLoginFragment">
+
+    <ImageView
+        android:id="@+id/Gicon"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/ic_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+   <TextView
+       android:id="@+id/Gwelcome"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/GSignInWelcome"
+       android:layout_below="@id/Gicon"
+       android:layout_margin="20dp"
+       android:textSize="35dp"
+       android:textColor="@color/grey_sub"
+       android:gravity="center"/>
+
+    <RelativeLayout
+        android:id="@+id/G_account"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Gcontinue"
+        android:layout_marginVertical="40dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/G_profile_pic"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/profile_pic"/>
+        <TextView
+            android:id="@+id/G_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="profile name"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/G_profile_pic"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/grey_dark"/>
+
+        <TextView
+            android:id="@+id/G_profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/G_profile_name"
+            android:layout_toRightOf="@id/G_profile_pic"
+            android:layout_marginHorizontal="10dp"
+            android:text="email.com"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/Gcontinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button"
+        android:paddingHorizontal="40dp"
+        android:layout_marginBottom="40dp"
+        android:text="Continue"/>
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/Header">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Journal"
+                    android:textSize="50dp"
+                    android:textColor="@color/black"
+                    android:layout_margin="25dp"
+                    android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:id="@+id/customListView"
+            android:layout_below="@id/Header"
+        >
+        </ListView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="35dp"
+            android:backgroundTint="@color/white"
+            android:elevation="6dp"
+            android:clickable="true"
+            android:src="@drawable/ic_add">
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/track_activity_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="45dp"
+            android:layout_marginBottom="115dp"
+            android:backgroundTint="@color/white"
+            android:clickable="true"
+            android:alpha="0"
+            android:elevation="6dp"
+            app:fabSize="mini"
+            android:src="@drawable/ic_run">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+        <TextView
+            android:id="@+id/track_activity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track Activity"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:alpha="0"
+            android:layout_marginRight="95dp"
+            android:layout_marginBottom="125dp"
+            android:textSize="15dp"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/activity_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="45dp"
+            android:layout_marginBottom="180dp"
+            android:backgroundTint="@color/white"
+            android:clickable="true"
+            android:alpha="0"
+            android:elevation="6dp"
+            app:fabSize="mini"
+            android:src="@drawable/ic_pencil">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+        <TextView
+            android:id="@+id/activity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Activity"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:alpha="0"
+            android:layout_marginRight="95dp"
+            android:layout_marginBottom="190dp"
+            android:textSize="15dp"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/weight_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:alpha="0"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="45dp"
+            android:layout_marginBottom="245dp"
+            android:backgroundTint="@color/white"
+            android:clickable="true"
+            app:fabSize="mini"
+            android:elevation="6dp"
+            android:src="@drawable/ic_weight_scale">
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+        <TextView
+            android:id="@+id/weight_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Weight"
+            android:alpha="0"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="95dp"
+            android:layout_marginBottom="255dp"
+            android:textSize="15dp"
+            />
+
+=</RelativeLayout>
